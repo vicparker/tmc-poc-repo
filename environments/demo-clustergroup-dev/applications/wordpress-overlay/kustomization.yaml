@@ -30,14 +30,14 @@ patches:
   patch: |-
     - op: replace
       path: /spec/commonName
-      value: wordpress.sgrhas.io
+      value: www.chaoslab.systems
     - op: replace
       path: /spec/dnsNames/0
-      value: wordpress.sgrhas.io
+      value: www.chaoslab.systems
 - target:
     kind: HTTPProxy
     name: wordpress
   patch: |-
     - op: replace
       path: /spec/virtualhost/fqdn
-      value: wordpress.sgrhas.io
+      value: www.chaoslab.systems
